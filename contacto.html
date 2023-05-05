@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS de Bootstrap y JS -->
+		<link rel="stylesheet" type="text/css" href="css/contacto.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+
+		<title> Formulario de Contacto </title>
+	</head>
+
+<body>
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic" data-tilt>
+				<img src="imagen/customer.jpg" alt="IMG">
+			</div>
+
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Formulario de Contacto
+				</span>
+
+				<div class="wrap-input1">
+					<input class="input1" type="text" name="name" placeholder="Nombre">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1">
+					<input class="input1" type="text" name="email" placeholder="Correo@mail.com">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1">
+					<input class="input1" type="text" name="subject" placeholder="Asunto/Razon">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1">
+					<textarea class="input1" name="message" placeholder="Mensaje"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+
+				<!-- Button con el que llamaremos al modal gracias al data-->
+				<div class="container-contact1-form-btn">
+					<button type="button" class="contact1-form-btn" data-toggle="modal" data-target="#formularioenvio">
+						Enviar
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<!-- Modal que dice "Formulario enviado al momento de presionar el button de arriba"-->
+	</section>
+
+	<div class="modal fade" id="formularioenvio" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close d-flex align-items-center justify-content-center"
+						data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="ion-ios-close"></span>
+					</button>
+				</div>
+				<div class="modal-body p-4 p-md-5">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="ion-ios-person"></span>
+					</div>
+					<h3 class="text-center mb-4">Formulario enviado.</h3>
+				</div>
+
+
+				<!-- Sin esto no abre el modal xd-->
+				<script src="js/bootstrap.min.js"></script>
+				<script src="js/main.js"></script>
+
+
+
+
+</body>
+
+</html>

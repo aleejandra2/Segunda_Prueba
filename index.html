@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagen/vinilo-logo.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <title> Página Principal </title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+                <img src="imagen/collage.jpg" alt="">
+            </div>
+            <div class="backImg" src="imagen/collage.jpg" alt="">
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title"> Iniciar Sesion </div>
+                    <form action="index2.html">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Introduce tu email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Introduce tu contraseña" required>
+                            </div>
+                            <div class="text"> <a href="#">¿Olvidaste tu contraseña?</a></div>
+                            <div class="button input-box">
+                                <input type="submit" value="Iniciar Sesion">
+                            </div>
+                            <div class="text sign-up-text"> ¿No tienes cuenta? <label for="flip"> Registrate ahora
+                                </label></div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <div class="title"> Registrarse </div>
+                    <form action="#">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Introduce tu nombre" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Introduce tu email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Introduce tu contraseña" required>
+                            </div>
+
+
+                            <!-- Button con el que llamaremos al modal gracias al data-->
+                            <div class="button input-box">
+                                <input type="submit" value="Registrarse" data-toggle="modal"
+                                    data-target="#formularioenvio">
+                            </div>
+
+
+                            <div class="text sign-up-text"> ¿Tienes una cuenta? <label for="flip"> Inicia Sesion</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- Sin esto no abre el modal xd-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
