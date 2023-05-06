@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="imagen/vinilo-logo.webp" type="image/x-icon">
+  <link rel="icon" href="imagen/Iconos.png" type="image/x-icon">
   <!-- CSS de Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/pagPrincipal.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -13,6 +14,41 @@
 
   <title>Página principal</title>
 
+  <!-- Este de aqui abajo se encarga de darle color al Background sin necesidad de un .css-->
+   <div class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block bg-light" style="z-index: 2000;">
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand nav-link" target="_blank" href="#logo">
+        <img src="imagen/Iconos.png" alt="Logo vinillo" width="40" height="40"
+          class="d-inline-block align-top">
+        <strong>Memories</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="paginaPrincipal.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="Productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="Nosotros.html"> Nuestro Equipo </a>
+        </li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
 
 
   <!-- Darle color a las letras de la barra de navegacion-->
@@ -26,53 +62,8 @@
 </head>
 
 <body>
-
-  <!-- Este de aqui abajo se encarga de darle color al Background sin necesidad de un .css-->
-  <div class="bg-light">
-
-
-
-
-
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block bg-light" style="z-index: 2000;">
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand nav-link" target="_blank" href="#kuchau">
-          <img src="imagen/vinilo-logo.webp" alt="Logo del taller mecánico" width="60" height="60"
-            class="d-inline-block align-top">
-          <strong>Memoriesdistro</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="index.html">Inicio de sesión</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="Productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="Nosotros.html"> Nuestro Equipo </a>
-          </li>
-          </ul>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar -->
-
-
-
-    <!-- Carrusel de imágenes -->
-    <div class="container bg-light">
+  <!-- Carrusel de imágenes -->
+    <div class="container">
       <h1 class="text-center my-5">Nuestros Productos Más Vendidos</h1>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -122,12 +113,7 @@
           contactarnos para cualquier consulta o presupuesto, estaremos encantados de ayudarte a encontrar lo que
           buscas.</p>
       </div>
-
-
-
-
-      <!-- Pruebas -->
-
+    </div>
 
 
 
@@ -141,9 +127,7 @@
 <!-- Pie de página -->
 <footer class="footer mt-auto py-3 bg-light">
   <div class="container">
-    <a class="text-muted">© 2023 Tienda de Albums Memoriesdistro S.A. Todos los derechos reservados.</a>
-
-
+    <a class="text-muted">© 2023 Tienda de Albums Memories S.A. Todos los derechos reservados.</a>
     <!-- Terminos y condiciones -->
     <li>
       <a class="link" href="terminos-condicioes.html">Terminos y Condiciones</a>
