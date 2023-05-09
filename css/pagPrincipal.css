@@ -4,9 +4,14 @@
 	box-sizing: border-box;
 }
 
-body, html {
+.body {
 	height: 100%;
 	font-family: Montserrat-Regular, sans-serif;
+    background: rgb(116,235,213);
+    background: -moz-linear-gradient(90deg, rgba(116,235,213,1) 0%, rgba(159,172,230,1) 77%);
+    background: -webkit-linear-gradient(90deg, rgba(116,235,213,1) 0%, rgba(159,172,230,1) 77%);
+    background: linear-gradient(90deg, rgba(116,235,213,1) 0%, rgba(159,172,230,1) 77%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#74ebd5",endColorstr="#9face6",GradientType=1);
 }
 /* .container{
     width: 100%;
