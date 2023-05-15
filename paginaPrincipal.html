@@ -8,6 +8,7 @@
   <!-- CSS de Bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/pagPrincipal.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -15,7 +16,7 @@
   <title>Página principal</title>
 
   <!-- Este de aqui abajo se encarga de darle color al Background sin necesidad de un .css-->
-   <div class="bg-light">
+   <!-- <div class="bg-light"> -->
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block bg-light" style="z-index: 2000;">
     <div class="container-fluid">
@@ -64,7 +65,9 @@
 <body>
   <!-- Carrusel de imágenes -->
     <div class="container">
-      <h1 class="text-center my-5">Nuestros Productos Más Vendidos</h1>
+      <div class="titulo">
+        <h1 class="text-center my-5">Nuestros Productos Más Vendidos</h1>
+      </div>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -75,22 +78,30 @@
           <div class="carousel-item active">
             <img src="imagen/christian_castro.webp" class="d-block w-100" alt="Producto 1">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Album 1</h5>
-              <p>Nuevo album a la venta, todas las canciones del Album de Christian Castro</p>
+              <div class="descripcion">
+                <h5>Album 1</h5>
+                <p>Nuevo album a la venta, todas las canciones del Album de Christian Castro</p>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
             <img src="imagen/jonghyun.webp" class="d-block w-100" alt="Producto 2">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Album 2</h5>
-              <p>Nuevo album a la venta, todas las canciones del Album de Kim Jonghyun</p>
-            </div>
+              <div class="descripcion">
+                <h5>Album 2</h5>
+                <p>Nuevo album a la venta, todas las canciones del Album de Kim Jonghyun</p>
+              </div>
+              </div>
+              
           </div>
           <div class="carousel-item">
             <img src="imagen/fly_me_to_the_moon.jpg" class="d-block w-100" alt="Producto 3">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Album 3</h5>
-              <p>Nuevo album a la venta, todas las canciones del Album de Joytastic Sarah</p>
+              <div class="descripcion">
+                <h5>Album 3</h5>
+                <p>Nuevo album a la venta, todas las canciones del Album de Joytastic Sarah</p>
+              </div>
+              
             </div>
           </div>
         </div>

@@ -3,9 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
+    background: rgb(116,235,213);
+	background: -moz-linear-gradient(90deg, rgba(116,235,213,1) 0%, rgba(159,172,230,1) 77%);
+	background: -webkit-linear-gradient(90deg, rgba(116,235,213,1) 0%, rgba(159,172,230,1) 77%);
+	background: linear-gradient(90deg, rgba(116,235,213,1) 0%, rgba(159,172,230,1) 77%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#74ebd5",endColorstr="#9face6",GradientType=1);
+}
+#logo{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
 }
 img {
     width: 100%;
@@ -19,7 +28,7 @@ h1 {
     font-size: 50px;
 }
 #boton-carrito {
-    font-size: 40px;
+    font-size: 15px;
     border-radius: 50%;
     padding: 10px 20px;
     transition: all .3s;
@@ -50,6 +59,7 @@ p {
     margin: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+    background-color: white;
 }
 .precioProducto {
     font-weight: 700;
@@ -164,4 +174,9 @@ p {
 }
 .boton-eliminar:focus {
     outline: none;
+}
+.footer{
+	font-family: 'Kalam', serif;
+	font-size: 15px;
+	background-color: #aaa;
 }
