@@ -35,7 +35,7 @@ stockProductos.forEach((producto) => {
     div.innerHTML = `
     <img src=${producto.img} alt= "">
     <h3>${producto.nombre}</h3>
-    <p>${producto.desc}</p>
+    <p class="albumdesc">${producto.desc}</p>
     <p class="unidadesultimas">Unidades: ${producto.unidades}</p>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>

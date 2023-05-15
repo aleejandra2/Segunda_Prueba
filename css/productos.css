@@ -60,6 +60,10 @@ p {
     color: red;
 }
 
+.albumdesc {
+    color: rgb(24, 207, 24);
+}
+
 
 .boton-agregar {
     display: block;
