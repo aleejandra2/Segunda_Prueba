@@ -39,6 +39,9 @@ stockProductos.forEach((producto) => {
     <p class="unidadesultimas"> ${producto.unidades}</p>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+    <button class="boton-agregar" type="button" onclick="location.href='https://wa.me?phone=47750405&text=Hola, se encuentra disponible este Articulo? ALBUM DE >>${producto.nombre}<<, NOMBRE >>${producto.desc}<< , PRECIO:$ ${producto.precio}'"> Consulta Disponibilidad <i class="fa-brands fa-whatsapp">
+
+    
 
     `
     contenedorProductos.appendChild(div)
