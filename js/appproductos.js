@@ -77,14 +77,17 @@ const agregarAlCarrito = (prodId) => {
 
     actualizarCarrito() 
 }
+
+
 const eliminarDelCarrito = (prodId) => {
     const item = carrito.find((prod) => prod.id === prodId)
-
+    
     const indice = carrito.indexOf(item) 
     carrito.splice(indice, 1) 
     actualizarCarrito() 
     console.log(carrito)
 }
+
 
 const actualizarCarrito = () => {
     
@@ -97,6 +100,7 @@ const actualizarCarrito = () => {
         <p>Precio:$${prod.precio}</p>
         <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
         <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+        <button onclick="location.href='https://wa.me?phone=47750405&text=hola'" class="boton-wsp"><i class="fa-brands fa-whatsapp"></i></i></button>
         `
 
         contenedorCarrito.appendChild(div)

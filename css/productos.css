@@ -169,6 +169,13 @@ p {
     font-size: 20px;
 }
 
+.boton-wsp {
+    background-color: white;
+    color: rgb(0, 255, 34);
+    border: none;
+    font-size: 20px;
+}
+
 .boton-eliminar:hover {
     cursor: pointer;
 }
