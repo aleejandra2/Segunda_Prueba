@@ -27,10 +27,17 @@ margin-bottom: 0px;
 }
 
 
-.card-body h5{
+.card-body h4{
     font-family: 'Caveat', serif;
 	font-size: 30px;
 	color: black;
+    text-align: center;
+}
+
+.card-body h5{
+    font-family: 'Caveat', serif;
+    font-size: 25px;
+    color: black;
     text-align: center;
 }
 
@@ -40,3 +47,4 @@ margin-bottom: 0px;
     color: black;
     text-align: center;
 }
+
