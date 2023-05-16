@@ -14,13 +14,29 @@ body {
     text-shadow: 4px 4px 4px #aaa;
 }
 
-img{
-    width: 100%;
+.card img{
+    width: 50%;
+    margin-left: 25%;
 }
 
-.nombre{
+.card-group{
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+
+.card-body h5{
     font-family: 'Caveat', serif;
 	font-size: 30px;
-	color: white;
-    text-align: left;
+	color: black;
+    text-align: center;
+}
+
+.card-body p{
+    font-family: 'Caveat', serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
 }
