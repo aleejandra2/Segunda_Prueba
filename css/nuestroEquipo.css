@@ -6,3 +6,21 @@ body {
 	background: linear-gradient(90deg, rgba(116,235,213,1) 0%, rgba(159,172,230,1) 77%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#74ebd5",endColorstr="#9face6",GradientType=1);
 }
+
+.titulo h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+img{
+    width: 100%;
+}
+
+.nombre{
+    font-family: 'Caveat', serif;
+	font-size: 30px;
+	color: white;
+    text-align: left;
+}
