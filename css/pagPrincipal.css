@@ -36,9 +36,8 @@ body {
     padding-left: 10%;
     padding-right: 10%;
 }
-
 .footer{
 	font-family: 'Kalam', serif;
 	font-size: 15px;
-	background-color: #aaa;
+	background: rgb(224, 204, 255);
 }

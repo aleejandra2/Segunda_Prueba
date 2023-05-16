@@ -20,55 +20,61 @@
     <script defer src="js/stock.js"></script>
     <script defer src="js/modal.js"></script>
     <script defer src="js/appproductos.js"></script>
+
+
+
+    <style>
+      .navbar .nav-link {
+        color: #000000 !important;
+      }
+    </style>
+                  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block bg-light" style="z-index: 2000;">
+        <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="#logo">
+          <img src="imagen/Iconos.png" alt="Logo vinillo" width="40" height="40"  class="d-inline-block align-top">
+          <strong> Memories </strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="paginaPrincipal.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Nosotros.html"> Nuestro Equipo </a>
+          </li>
+          </ul>
+          </ul>
+        </div>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Ej. Sonne" aria-label="Search" >
+          <button class="btn btn-outline-info" type="submit">Search</button>
+        </form>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+      </div>
+    </nav>
+    <!-- Navbar -->
 </head>
 <body>
-  <style>
-    .navbar .nav-link {
-      color: #000000 !important;
-    }
-  </style>
-                <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block bg-light" style="z-index: 2000;">
-      <div class="container-fluid">
-      <!-- Navbar brand -->
-      <a class="navbar-brand nav-link" target="_blank" href="#logo">
-        <img src="imagen/Iconos.png" alt="Logo vinillo" width="40" height="40"  class="d-inline-block align-top">
-        <strong> Memories </strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarExample01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="paginaPrincipal.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="Productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="Nosotros.html"> Nuestro Equipo </a>
-        </li>
-        </ul>
-        </ul>
-      </div>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Ej. Sonne" aria-label="Search">
-        <button class="btn btn-outline-info" type="submit">Search</button>
-      </form>
-      <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
-    </div>
-  </nav>
-  <!-- Navbar -->
-
+  
+  <div class="titulo">
+    <h5 class="text-center my-5">¡Elige tus productos!</h5>
+  </div>
     <main id="contenedor-productos">
       
     </main>
-
+    
     <div class="modal-contenedor">
         <div class="modal-carrito">
             <h3>Carrito</h3>
