@@ -100,7 +100,7 @@ const actualizarCarrito = () => {
         <p>Precio:$${prod.precio}</p>
         <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
         <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
-        <button onclick="location.href='https://wa.me?phone=47750405&text=hola'" class="boton-wsp"><i class="fa-brands fa-whatsapp fa-shake"></i></i></button>
+        <button onclick="location.href='https://wa.me?phone=47750405&text=Hola, se encuentra disponible este Producto? Nombre : ${prod.nombre} , Album ${prod.desc}  , Cantidad : ${prod.cantidad}  , Precio : ${prod.precio} '" class="boton-wsp"><i class="fa-brands fa-whatsapp fa-shake"></i></i></button>
         `
 
         contenedorCarrito.appendChild(div)
