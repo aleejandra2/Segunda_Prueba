@@ -1,7 +1,12 @@
 * {
 	box-sizing: border-box;
 }
-
+.titulo h1{
+	font-family: 'Tangerine', serif;
+	font-size: 50px;
+	text-shadow: 4px 4px 4px #aaa;
+	
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	background: rgb(116,235,213);
@@ -12,6 +17,8 @@ body {
 }
 
 main {
+	font-family: 'Tangerine', serif;
+	font-size: 15px;
 	max-width: 800px;
 	width: 90%;
 	margin: auto;
@@ -56,10 +63,12 @@ main {
 	font-size: 12px;
 	margin-bottom: 0;
 	display: none;
+	
 }
 
 .formulario__input-error-activo {
 	display: block;
+	
 }
 
 .formulario__validacion-estado {
@@ -164,4 +173,9 @@ main {
 	.formulario__btn {
 		width: 100%;
 	}
+}
+.footer{
+	font-family: 'Kalam', serif;
+	font-size: 15px;
+	background: rgb(224, 204, 255);
 }

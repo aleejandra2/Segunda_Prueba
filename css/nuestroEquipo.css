@@ -1,3 +1,8 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	background: rgb(116,235,213);
@@ -48,3 +53,8 @@ margin-bottom: 0px;
     text-align: center;
 }
 
+.footer{
+	font-family: 'Kalam', serif;
+	font-size: 15px;
+	background: rgb(224, 204, 255);
+}

@@ -1,7 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+}
+.titulo h5{
+	font-family: 'Tangerine', serif;
+	font-size: 70px;
+	text-shadow: 4px 4px 4px #aaa;
+	
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -165,6 +171,13 @@ p {
 .boton-eliminar {
     background-color: white;
     color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-wsp {
+    background-color: white;
+    color: rgb(0, 255, 34);
     border: none;
     font-size: 20px;
 }

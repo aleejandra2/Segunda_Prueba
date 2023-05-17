@@ -39,6 +39,9 @@ stockProductos.forEach((producto) => {
     <p class="unidadesultimas"> ${producto.unidades}</p>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+    <button class="boton-agregar" type="button" onclick="location.href='https://wa.me?phone=47750405&text=Hola, se encuentra disponible este Articulo? ALBUM DE >>${producto.nombre}<<, NOMBRE >>${producto.desc}<< , PRECIO:$ ${producto.precio}'"> Consulta Disponibilidad <i class="fa-brands fa-whatsapp fa-beat-fade">
+
+    
 
     `
     contenedorProductos.appendChild(div)
@@ -74,14 +77,17 @@ const agregarAlCarrito = (prodId) => {
 
     actualizarCarrito() 
 }
+
+
 const eliminarDelCarrito = (prodId) => {
     const item = carrito.find((prod) => prod.id === prodId)
-
+    
     const indice = carrito.indexOf(item) 
     carrito.splice(indice, 1) 
     actualizarCarrito() 
     console.log(carrito)
 }
+
 
 const actualizarCarrito = () => {
     
@@ -94,6 +100,7 @@ const actualizarCarrito = () => {
         <p>Precio:$${prod.precio}</p>
         <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
         <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+        <button onclick="location.href='https://wa.me?phone=47750405&text=hola'" class="boton-wsp"><i class="fa-brands fa-whatsapp fa-shake"></i></i></button>
         `
 
         contenedorCarrito.appendChild(div)
